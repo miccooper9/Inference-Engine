@@ -34,3 +34,9 @@ input. The output has 2 classes( depending on values present in annotation) viz 
 denoting the presence of safety helmets in the image. The architecture summary is shown
 below. Note that the final dense layer has 2 classes.
 
+
+
+The dataset with images and annotations can be found here:
+https://drive.google.com/drive/folders/1TFjsTFspmtyViBOmuCo-tBbXZ72GhVuG?usp=sharing
+
+
