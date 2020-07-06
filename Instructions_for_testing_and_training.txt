@@ -60,7 +60,7 @@ o this file reads the test images from :engine->keras-frcnn-master->test_images
 o this file loads the trained FRCNN model from : engine->keras-frcnn-master->model_frcnn.hdf5
 o Runs the test images through the FRCNN network
 o writes the output bounding box labels for detected 'head' bounding boxes to : engine->frcnnoutput.csv
-o the format of the bounding box labels is : 0.jpg,xtl,ytl,xbr,ybr,head  
+o the format of the bounding box labels is : 0.jpg,xtl,ytl,xbr,ybr,head ([imagefile_name],[x_top_left],[y_top_left],[x_bottom_right],[y_bottom_right],[class])  
 
 
 ===>NOW run the MASK and SAFETY HELMET CLASSIFIERS:
@@ -73,7 +73,9 @@ o loads the trained mask classifier model from : engine->maskclassifier.h5
 o loads the trained safety helmet classifier model from : engine->helmetclassifier.h5
 o Runs the cropped and resized bounding box images thruogh the classifier networks
 o writes the output labels to : engine->outtotal.txt
-o the format of the output labels is : 0.jpg,xtl=174,ytl=56,xbr=220,ybr=126,mask=>yes,helmet=>invisible
+o the format of the output labels is : 0.jpg,xtl=174,ytl=56,xbr=220,ybr=126,mask=>yes,helmet=>invisible ([imagefile_name],[x_top_left],[y_top_left],[x_bottom_right],[y_bottom_right],[mask_detetion],[helmet_detetion])  
+
+
 
 
 
